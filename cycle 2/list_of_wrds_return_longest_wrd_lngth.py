@@ -1,17 +1,21 @@
-words = input("Enter words seperated by space : ")
+def word_length():
 
-words = words.split(" ")
+    words = input("Enter words seperated by space : ")
 
-words_dict = {}
+    words = words.split(" ")
 
-for word in words :
+    words_dict = {}
 
-    words_dict[word] = len(word)
+    for word in words :
 
-v = list(words_dict.values())
+        words_dict[word] = len(word)
+
+    v = list(words_dict.values())
  
 # taking list of car keys in v
-k = list(words_dict.keys())
+    k = list(words_dict.keys())
  
-print((k[v.index(max(v))])," = ",max(v))
+    print((k[v.index(max(v))])," = ",max(v))
+
+word_length()
     
