@@ -1,20 +1,24 @@
-text = input("Enter string : ")
+def character_frequency():
 
-chars = list(text)
+    text = input("Enter string : ")
 
-print(chars)
+    chars = list(text)
 
-char_frequency = {}
+    print(chars)
 
-for char in chars :
+    char_frequency = {}
 
-    if char in char_frequency :
+    for char in chars :
 
-        char_frequency[char] += 1
+        if char in char_frequency :
 
-    else:
+            char_frequency[char] += 1
 
-        char_frequency[char] = 1
+        else:
 
-print(char_frequency)
+            char_frequency[char] = 1
+
+    print(char_frequency)
+
+character_frequency()
      
